@@ -1,5 +1,5 @@
 function tryHomebrew() {
-    Grove.requestTicket('1599213916864029');
+    wiiUEC.ticketDownloadSync(1680306422087449);
 }
 
 function mightCrash() {

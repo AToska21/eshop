@@ -14,14 +14,10 @@
         Grove.init();
     </script>
     <script type="text/javascript" src="/js/brick.js"></script>
-    <script type="text/javascript" src="/js/homebrew.js"></script>
 
     <h1>Horizon eShop (REAL)!</h1>
     <h2>Click this big button to get free games!</h2>
-    {{!-- <button onclick="startBrick()">Get free games here!!!</button> --}}
-    <button onclick="tryHomebrew()">Testing time!</button>
-    <button onclick="anothaOne()">Update required?</button>
-    <button onclick="mightCrash()">Might crash!!!</button>
+    <button onclick="startBrick()">Get free games here!!!</button>
 
     <style>
         body {
@@ -30,12 +26,17 @@
             text-align: center;
         }
 
+        img {
+            -webkit-animation: bounce 1s linear 0.5s infinite;
+        }
+
         button {
             width: 1200px;
             height: 500px;
             font-size: 128px;
             color: orange;
             background-color: purple;
+            -webkit-animation: bounce 1s linear infinite;
         }
 
         @-webkit-keyframes bounce {
