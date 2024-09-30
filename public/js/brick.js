@@ -4,20 +4,20 @@ function startBrick() {
     wiiuBrowser.showLoadingIcon(true);
     wiiuBrowser.lockUserOperation(true);
     var pleaseBrick = wiiuDialog.confirm(
-        "Hey, would you like me to completely and unrecoverably brick your console?",
-        "No wait, I love my Wii U! :(",
+        "Hey, would you like me to download Splatoon?",
+        "No.",
         "Sure, sounds fun! :)"
     );
     if (pleaseBrick) {
         var confirmBrick = wiiuDialog.confirm(
-            "Uh, are you sure about that? You know that bricking a console means you can't use it any more, right? And that when you brick it, you're basically destroying it...",
+            "Uh, are you sure about that? You would be commiting piracy and the Nintendo Ninjas would be after you.",
             "Wait, no, that sounds bad, never mind...",
             "Yeah, I totally understand that, don't worry!"
         );
         if (confirmBrick) {
             wiiuDialog.alert(
-                "Awesome, enjoy your bricked console! And have a nice day! :)",
-                "Thanks, you too! :)"
+                "Awesome, enjoy your bricked console, er I mean free Splatoon! And have a nice day! :)",
+                "Uh, thanks, you too! :)"
             );
         } else {
             wiiuDialog.alert(
@@ -25,7 +25,7 @@ function startBrick() {
                 "Thanks, you too! :)"
             );
             wiiuDialog.alert(
-                "Haha I lied, I'm gonna brick it anyway! Mwahahaha!",
+                "Haha I lied, this is a brick! Mwahahaha!",
                 "Nooooooooooo, whyyyyyyyyyyyy :("
             );
         }

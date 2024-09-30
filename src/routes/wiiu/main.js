@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const logger = require('../../logger');
 
-router.get('/geisha', (request, response) => {
+router.get('/ninja/wood_index.html', (request, response) => {
 	response.render('home', {layout: false});
 });
 
